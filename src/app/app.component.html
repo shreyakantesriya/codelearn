@@ -1,0 +1,75 @@
+<div class="container my-5">
+  <h1>Template Form</h1>
+  <form class="row g-3 my-2" #regForm='ngForm' (ngSubmit)="Register(regForm)">
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="uname" [ngModel]="user.uname" required #uname="ngModel">
+          <div *ngIf="uname.invalid" class="text-danger">
+            Name required
+
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td><input type="radio" value="male" name="gender" [ngModel]="user.gender" required #gender='ngModel'>male
+          <input type="radio" value="female" name="gender" [ngModel]="user.gender" required #gender='ngModel'>female
+          <div *ngIf="gender.invalid" class="text-danger">Gender required</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Are you married:</td>
+        <td><input type="checkbox" name="married" [ngModel]="user.isMarried"></td>
+      </tr>
+      <tr>
+        <td>Accepet temes and condition:</td>
+        <td><input type="checkbox" name="TCAccepted" [ngModel]="user.isTCAccepted" readonly #TCAccepted='ngModel'>
+          <div *ngIf="TCAccepted.invalid" class="text-danger"></div>
+        </td>
+
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button class="btn btn-primary"type="submit">Submit</button>
+          <button class="btn btn-primary mx-2" type="button" (click)="setDefulatValue()">Set Default</button>
+          <button class="btn btn-primary mx-2" type="button" (click)="Reste(regForm)">Reset</button>
+        </td>
+      </tr>
+    </table>
+    <div class="col-md-6">
+      <label for="fname" class="form-label">Frist Name</label>
+      <input type="text" class="form-control" id="fname" name="fname" required ngModel>
+    </div>
+    <div class="col-md-6">
+      <label for="lname" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="lname" name="lname" required ngModel>
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" email required ngModel #email="ngModel">
+      <span class="help-bpx" *ngIf="email.touched && !email.valid">Plese valide the email</span>
+    </div>
+    <div class="col-md-6">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" name="password" required ngModel>
+    </div>
+    <div class="col-12">
+      <label for="address" class="form-label">Address</label>
+      <input type="text" class="form-control" id="address" name="address" required ngModel>
+    </div>
+
+    <div class="col-md-6">
+      <label for="city" class="form-label">City</label>
+      <input type="text" class="form-control" id="city" ngModel required name="city">
+    </div>
+
+
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-success" id="Register" [disabled]="!regForm.valid">Register</button>
+    </div>
+  </form>
+</div>
+
+<app-reactive-form></app-reactive-form>

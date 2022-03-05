@@ -1,0 +1,53 @@
+<!-- <div class="container my-5">
+  <h1>Reactive Form</h1>
+  <form class="row g-3 my-2" [formGroup]="singupForm">
+    <div class="col-md-6">
+      <label for="fname" class="form-label">Frist Name</label>
+      <input type="text" formControlName="fname" class="form-control" id="fname1"> -->
+      <!-- <span *ngFor="singupForm.control['fname'].haserror(required)">Eneter the name</span> -->
+
+    <!-- </div>
+    <div class="col-md-6">
+      <label for="lname" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="lname1" formControlName="lname">
+
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email1" formControlName="email">
+
+    </div>
+    <div class="col-md-6">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password1" formControlName="password">
+    </div>
+
+
+
+
+
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-success" id="Register1" value="PostData" (click)="PostData()"
+        [disabled]="!singupForm.valid">PostData</button>
+      <button type="reset" class="btn btn-danger mx-2" (click)="restForm()">Reset</button>
+      <button type="reset" class="btn btn-danger mx-2" (click)="fillForm()">Fill Data</button>
+    </div>
+  </form>
+</div> -->
+
+<div>
+  <h1>Nested form</h1>
+  <form action="" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div formArrayName="ContactNo">
+      <div class="col-md-6" *ngFor="let contact of form.controls.ContactNo.controls; index as i">
+        <label class="form-label">Contact No</label>
+        <input [formArrayName]="i">
+      </div>
+    </div>
+    <button class="btn btn-success mb-3">Submit</button>
+  </form>
+  <button class="btn btn-primary" (click)="addContactNo()">Add new contact No</button>
+  <button class="btn btn-primary mx-2" (click)="setPreset()">set preset</button>
+</div>
+
