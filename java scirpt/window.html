@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .contener{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+    'navbar navbar navbar navbar'
+    'section section section aside' ;
+}
+ #navbar{
+    grid-area: navbar;
+    display: block;
+    list-style: none;
+    
+    background: honeydew;
+}
+#navba li{
+    display: block;
+    list-style:none;
+    text-decoration: none;
+}
+#section{
+    grid-area: section;
+}
+#aside{
+    grid-area: aside;
+}
+.item{
+    border: 2px solid black;
+    background: burlywood;
+    padding: 9rem;
+}
+    </style>
+    <title>Website lay out in js</title>
+</head>
+<body>
+    <div class="contener">
+        <nav id="navbar"  class="item">
+            hi
+            <ul id="mul">
+                
+                <li id="fmul"><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">conteat us</a></li>
+                <li id="lmul"><a href="#">Fecture</a></li>
+            </ul>
+        </nav>
+        <h1 id="heading">Welcom to the sites</h1>
+        <section id="section" class="item">
+            <form action="">
+                <div class="big">
+                    <input type="text" placeholder="Name">
+                </div>
+            </form>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab consequatur sed rem reiciendis eligendi similique vel ut alias eos cum. Rem, distinctio dignissimos. Officiis perspiciatis harum officia. Atque culpa ipsum perferendis commodi quis ullam qui ratione in, necessitatibus aliquam assumenda aut nostrum, ducimus incidunt, error eaque facere laudantium placeat expedita et. Modi non aperiam corporis unde, vel debitis quaerat rerum amet quam possimus. Saepe eveniet vero eos possimus earum fugiat illo sed quis, fuga, totam reprehenderit molestias ex. Hic saepe vitae quo soluta ipsum totam qui deserunt dolores temporibus quos in sequi nesciunt facere repudiandae autem tenetur voluptatum aliquid porro nostrum perspiciatis aliquam velit, minus numquam? Ex sint, nam reprehenderit cum ad dolorem doloremque voluptatum assumenda consectetur itaque omnis magnam voluptatem animi sequi placeat ullam distinctio impedit dicta perferendis ratione explicabo suscipit labore rerum. Voluptatem ea illo labore ut voluptates, quisquam minima, tenetur reprehenderit rem exercitationem mollitia, blanditiis a id eligendi itaque explicabo sequi laborum earum dolore ipsa aperiam. Pariatur quod deserunt, voluptatibus aut dolores impedit debitis repellat rerum explicabo deleniti rem, quasi quae veniam incidunt suscipit alias aperiam quisquam quaerat facilis optio ad eius necessitatibus? Eius quae doloremque facere repudiandae reprehenderit. Asperiores quibusdam ab ullam voluptatibus soluta neque laudantium!
+        </section>
+        <aside id="asinde" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quis aperiam sint eaque harum possimus laborum tempora unde! Ducimus eius ad nisi, error vitae deleniti nihil fuga provident ab itaque!
+        </aside>
+    </div>
+    <!-- <script src="window.js"></script> -->
+    <!-- <script src="elementslector.js"></script>
+     -->
+     <!-- <script src="childernparnttravasing.js"></script> -->
+     <!-- <script src="creating.js"></script>
+     -->
+     <script src="event.js"></script>
+</body>
+</html>
