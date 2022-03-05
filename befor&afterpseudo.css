@@ -1,0 +1,30 @@
+.cool::before{
+    display: block;
+    content: "Hello ";
+    color: blueviolet;
+    border: 2px solid black;
+    margin: 40px;
+    padding: 50px;
+    width: 300px;
+
+}
+.cool::after{
+    display: block;
+    content: "Hello ";
+    color: blueviolet;
+    border: 2px solid black;
+    margin: 40px;
+    padding: 50px;
+    width: 300px;
+
+}
+.main-heading::before{
+    display: block;
+    content: "Hello ";
+    color: blueviolet;
+    border: 2px solid black;
+    margin: 40px;
+    padding: 50px;
+    width: 300px;
+}
+/* img,br,input etc.. not use in befor and after element */

@@ -1,0 +1,36 @@
+body{
+    color:blueviolet
+}
+.conterner1{
+    color:brown
+}
+.conterner2{
+    color:coral;
+}
+h1{
+    background: darkgray;
+    /* text-align: center; */
+    width:500px;
+    text-align: right;
+    padding-right: 10px;
+}
+a{
+    background: silver;
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+    text-decoration: underline wavy blueviolet;
+}
+.pera{
+    color: black;
+    /* 700:bold; */
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 90px;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+
+}

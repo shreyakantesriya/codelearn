@@ -1,0 +1,10 @@
+h1{
+    border: 2px solid black;
+    margin: 100px;
+    display: inline;
+}
+a{
+    border: 2px solid black;
+    display: block;
+    margin: 10px;
+}

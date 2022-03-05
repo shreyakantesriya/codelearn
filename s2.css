@@ -1,0 +1,27 @@
+/* inline element > id selocter > class selector > element selctor  */
+div#conterner ul.my-song li{
+    color:blanchedalmond;
+    background-color: black;
+}
+/* hoew to calculate spcificity */
+/* four number chack in spcificity */
+/* 1:how inline elemnt
+   2:id selector
+   3:class selector
+   4:element selctor
+   0,1,1,3
+   spcificity-->113 */
+
+/* .favrite{
+    background-color: blanchedalmond;
+    color: black;
+} */
+/* 0,0,1,0 
+spcificity-->10*/
+
+div#conterner ul.my-song li.favrite{
+    background-color: blanchedalmond;
+    color: black;
+}
+/* 0,1,2,3
+spcificity-->123 */

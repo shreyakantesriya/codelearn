@@ -1,0 +1,24 @@
+/* link,visited,hover,active */
+
+a:link{
+    color: palevioletred;
+}
+a:visited{
+    color: red;
+    
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: indianred;
+}
+input:focus{
+    padding: 20px;
+    outline: none;
+
+}
+input:required{
+    /* background: gray; */
+    color: green
+}

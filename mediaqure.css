@@ -1,0 +1,42 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: lavender;
+}
+h1{
+    font-size: 10rem;
+}
+p{
+    font-size: 5rem;
+}
+@media(max-width:500px){
+    html{
+        font-size: 5px;
+
+    }
+    body{
+        background: lightcoral;
+    }
+}
+@media(min-width:501px)and (max-width:768px){
+    body{
+        background:lightslategray;
+    }
+}
+@media(min-width:769px)and (max-width:1024px){
+    body{
+        background:lightyellow;
+    }
+}
+@media(min-width:1025px)and (max-width:1200px){
+    body{
+        background:mediumaquamarine
+    }
+}
+@media(min-width:1201px){
+    body{
+        background:olive;
+    }
+}

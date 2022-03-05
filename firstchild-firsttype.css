@@ -1,0 +1,44 @@
+/* p:first-child{
+    color: green;
+} */
+/* p:first-of-type{
+    color: red;
+} */
+/* p:last-child{
+    color: green;
+} */
+/* p:last-of-type{
+    color: red;
+} */
+ /* p:nth-child(2n){
+    color: brown;
+ }    */
+/* p:nth-of-type(2n){
+    color: crimson;
+} */
+/* body :not(p){
+    color: red;
+    background: darkolivegreen;
+} */
+/* div :empty{
+    background: darksalmon;
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+} */
+/* :root{
+    background: darkturquoise;
+    color: floralwhite;
+} */
+/* pseudo element */
+/* p::first-letter{
+    font-size: 40px;
+} */
+/* p::first-line{
+    font-size: 40px;
+} */
+/* p::selection{
+    background: black;
+    color: cornsilk;
+} */
+

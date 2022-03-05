@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+.fav-musicians{
+    border: 10px solid black;
+    /* padding: 10px; */
+}
+.mozarat{
+    /* border: 4px solid red; */
+    width: 25%;
+    background: lemonchiffon;
+    float: left;
+    padding: 20px;
+}
+.beethoven{
+    width: 25%;
+    float: left;
+    background: lightcyan;
+    padding: 20px;
+}
+.bach{
+    width: 25%;
+    float: left ;
+    background: lightgray;
+    padding: 20px;
+
+}
+.paganini{
+    width: 25%;
+    float: left;
+    background: lightyellow;
+    padding: 20px;
+}
+/* .clear-fix{
+    clear: both;
+} */
+/* .box{
+    clear: both;
+} */
+.fav-musicians::after{
+    content: "";
+    display: block;
+    clear: both;
+}

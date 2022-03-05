@@ -1,0 +1,18 @@
+/* h1{
+    border: 4px solid black;
+    /* width: 50%; */
+    /* viewport width - vw */
+    /* width: 50vw;
+} */ 
+.box{
+    border: 4px solid black;
+    padding: 10px;
+    /* width: 50%; */
+    height: 100vmax;
+    /* width: 100px; */
+    background-color: cadetblue;
+}
+/* .box h1{
+    border: 2px solid black;
+    width: 70vw;
+} */

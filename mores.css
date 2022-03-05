@@ -1,0 +1,27 @@
+*{
+    color:darkslateblue;
+}
+header{
+    background-color: cornflowerblue;
+}
+section.articls{
+    /* background-color:cyan; */
+}
+main{
+    /* background-color: darkblue; */
+}
+section{
+    background-color: darkgray;
+}
+section.articls > h2{
+    color: floralwhite;
+}
+/* h2+p{
+    color: gainsboro;
+} */
+section.articles h2+p{
+    color:lightcoral;
+}
+ul+p{
+    color: khaki;
+}

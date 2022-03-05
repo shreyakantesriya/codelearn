@@ -1,0 +1,20 @@
+/* inline element > id selocter > class selector > element selctor  */
+/* class seloctor ki spicificity more thane element selectior */
+/* id seloctor ki spicificity more thane class and element selectior */
+/* inline element ki spicificity more thane id and class and element selectior */
+
+h1{
+    color:hotpink
+}
+
+.h{
+    color: red;
+}
+
+h1.heading{
+    color: indigo;
+}
+
+/* #h1{
+    color: indianred !important;
+} */

@@ -1,0 +1,19 @@
+hr{
+    width: 500px;
+    margin-left: 0;
+    border: 1px dashed black;
+}
+.box1{
+    width: 500px;
+    background-color: cadetblue;
+    border: 5px solid black;
+    padding: 50px;
+}
+.box2{
+    box-sizing: border-box;
+    width: 500px;
+    background-color: cadetblue;
+    border: 5px solid black;
+    padding: 50px;
+
+}
