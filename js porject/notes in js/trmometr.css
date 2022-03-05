@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.outerDiv{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(207, 230, 231);
+    display: grid;
+    place-items: center;
+}
+.innerDiv{
+    width: 80vw;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+    /* color: white; */
+}
+.main{
+    padding: 30px;
+    /* color:white; */
+    text-shadow: 0 1px 8px rgba(10, 10, 10, 0.377);
+    font-size: 150px;
+}

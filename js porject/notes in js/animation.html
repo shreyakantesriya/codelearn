@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation </title>
+    <style>
+        body{
+            background: black
+        }
+        .curcle{
+            /* width: 30px;
+            height: 30px; */
+            border: 2px solid #000;
+            position: absolute;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="curcle"></div> -->
+    <script>
+        document.onmousemove = animatCrl
+        var colors = ['#ccc','#6cf','#eba13a']
+        function animatCrl(event){
+            var curcle = document.createElement("div");
+            curcle.setAttribute("class","curcle");
+            document.body.appendChild(curcle);
+            curcle.style.left = event.clientX +'px';
+            curcle.style.top = event.clientY + 'px';
+             var color = colors[Math.floor(Math.random() * colors.length)]
+            curcle.style.borderColor = color;
+            curcle.style.transition = "all 0.5s linear 0s";
+            curcle.style.left = curcle.offsetLeft -20 +'px';
+            curcle.style.top = curcle.offsetTop -20 +'px';
+            curcle.style.width = "50px";
+            curcle.style.height = "50px";
+            curcle.style.borderWidth = "10px";
+            curcle.style.opacity = "0";
+            
+
+
+
+
+
+        }
+    </script>
+</body>
+</html>

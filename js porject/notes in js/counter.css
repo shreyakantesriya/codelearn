@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: rgb(64, 135, 138);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+}
+.counter{
+    /* margin-bottom: 2rem; */
+    /* border: 2px solid black; */
+    text-align: center;
+    color: rgb(37, 4, 4);
+    
+}
+.count{
+    margin-top: 1rem;
+    font-size: 5rem;
+    color:rgb(80, 14, 14)
+
+}
+span{
+    font-size: 3rem;
+    margin-top: 1rem;
+}

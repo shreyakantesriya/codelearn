@@ -1,0 +1,35 @@
+.container{
+    text-align: center;
+    margin-top: 30px;
+    
+}
+table{
+    margin: auto;
+}
+input{
+    font-size: 35px;
+    background: rgb(131, 136, 124);
+    color: white;
+    border:2px solid white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+button{
+    font-size: 40px;
+    padding: 35px;
+    width: 113px;
+    height: 90px;
+    color: rgb(90, 109, 63); 
+    border:2px solid white;
+    border-radius: 10px;
+    background: rgb(233, 233, 233);
+    /* margin: 0.5rem; */
+}
+.clcu{
+    display: inline-block;
+    border: 4px solid rgb(131, 136, 124);
+    padding: 2rem;
+    border-radius: 20px;    
+   
+}

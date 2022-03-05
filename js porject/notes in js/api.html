@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <style>
+        body{
+            background: rgb(212, 210, 210);
+        }
+        #card{
+            /* border: 2px solid black; */
+            /* display: inline-block; */
+            margin: auto;
+            background: rgb(245, 237, 237);
+            margin-top: 3rem;
+            width: 400px;
+            height: 600px;
+            padding: 2rem;
+            /* border-radius: 30px; */
+            box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.123),
+            -5px -5px 30px 15px rgba(0, 0, 0, 0.103);
+            /* position:absolute; */
+        }
+        #card:hover{
+            box-shadow: none;
+            /* color:rgb(212, 210, 210); */
+        }
+        /* .card{
+            display: inline-block;
+        } */
+        .card-body{
+            text-align: center;
+            display: block;
+        }
+        .card-body-img{
+            /* border: 2px solid black; */
+            height: 200px;
+            width: 200px;
+            /* margin: 2rem;
+            margin-left:7rem ; */
+        }
+        .card-footer-social{
+            display: inline-block;
+            padding: 1rem;
+        }
+
+        .card-footer-social p{
+            letter-spacing: 1px;
+        }
+        .card:hover{
+            padding: 2rem;
+            transform: scale(0.9,0.9);
+            box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.089),
+            -5px -5px 30px 15px rgba(0, 0, 0, 0.089);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+         <!-- <div id="card">
+            <article class="card">
+                <div class="card-body">
+                    <img src="${data.flag}" alt="" class="card-body-img">
+                    <h1 class="card-body-title">${data.name}<span></span></h1>
+                    <p class="card-body-text">Capital : ${data.capital}</p>
+                </div>
+                <hr>
+                <div class="card-footer">
+                    <div class="card-footer-social">
+                        <h3>${data.nativeName}</h3>
+                        <p>native Language</p>
+                    </div>
+                    <div class="card-footer-social">
+                        <h3>${data.population}</h3>
+                        <p>Population</p>
+                    </div>
+                    <div class="card-footer-social">
+                        <h3>${data.demonym}</h3>
+                        <p>Demonym</p>
+                    </div>
+
+                </div>
+            </article>
+        </div>  -->
+    </div>
+    <script>
+        const container = document.querySelector("#container");
+        const request = new XMLHttpRequest()
+        // request.open("GET","https://restcountries.eu/rest/v2/name/chin")
+        request.open("GET","https://restcountries.eu/rest/v2/name/japan")
+        request.send();
+        // to get the Response
+        request.addEventListener("load",function(){
+            // console.log( this.responseText); 
+            const [data] = JSON.parse(this.responseText)
+            // console.log(data.capital);
+            const htmlData = `<div id="card">
+            <article class="card">
+                <div class="card-body">
+                    <img src="${data.flag}" alt="" class="card-body-img">
+                    <h1 class="card-body-title">${data.name}<span></span></h1>
+                    <p class="card-body-text">Capital : ${data.capital}</p>
+                </div>
+                <hr>
+                <div class="card-footer">
+                    <div class="card-footer-social">
+                        <h3>${data.nativeName}</h3>
+                        <p>native Language</p>
+                    </div>
+                    <div class="card-footer-social">
+                        <h3>${data.population}</h3>
+                        <p>Population</p>
+                    </div>
+                    <div class="card-footer-social">
+                        <h3>${data.demonym}</h3>
+                        <p>Demonym</p>
+                    </div>
+
+                </div>
+            </article>
+        </div>`;
+        container.insertAdjacentHTML("afterbegin",htmlData)
+        });
+
+    </script>
+</body>
+</html>
