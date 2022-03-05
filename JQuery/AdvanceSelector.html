@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance selectores in jquery</title>
+</head>
+<body>
+    <ol type="0">
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima atque aspernatur magni dolorem officia. Exercitationem at dolorum cupiditate aut, eaque fugiat, officia sit sequi sed beatae nemo et mollitia excepturi?</li>
+        <li>Veritatis tempora at harum quisquam repellat atque explicabo nisi, necessitatibus odio a quidem impedit in earum enim laborum. Repellendus unde illum aliquam obcaecati. Laboriosam labore aspernatur quod ratione totam magni.</li>
+        <li>Aliquam nesciunt iste laboriosam neque praesentium! Est, necessitatibus aut sapiente blanditiis eius incidunt exercitationem ut, nulla consectetur sit, rem molestias voluptate. Repellendus exercitationem blanditiis fuga repellat eligendi minima ea neque!</li>
+        <li>Architecto quisquam tempore corporis, voluptate optio pariatur velit aperiam necessitatibus commodi sunt neque doloremque, beatae perspiciatis. Mollitia ut non quos adipisci neque odio, accusantium iure id, quas, quis provident est.</li>
+        <li>Quaerat alias laborum tempore optio. Alias magni velit sapiente consequuntur dicta a molestias vitae explicabo error perferendis? Dolorum cum itaque ipsa quasi tempora, doloremque adipisci. Id, ex totam? Accusamus, voluptate.</li>
+        <li>Atque sed illum quaerat debitis consectetur rem nesciunt modi. Eos architecto saepe quod nulla reprehenderit at vel labore repellat ipsum corporis omnis, rerum blanditiis provident, dolor accusantium aspernatur suscipit quaerat.</li>
+        <li>Autem minima nisi reiciendis perspiciatis quia distinctio harum, voluptatem omnis, dolorem quaerat ducimus, vero odit sed. Praesentium quia aliquid eaque harum accusamus ab atque, facilis, laborum, vero obcaecati dolore perferendis!</li>
+        <li>Recusandae, neque deserunt. Eligendi minima iure doloremque eius molestias sapiente beatae commodi adipisci magni. Nesciunt vitae natus labore doloribus ea consequatur atque, dicta voluptate dolores, officia quibusdam eius! Inventore, doloremque?</li>
+        <li>Ex unde provident error labore vel, explicabo ipsa odit ullam? Necessitatibus recusandae at sapiente velit fugit numquam, nulla mollitia ipsum quo qui, eum corporis deserunt reprehenderit tempora quae tenetur. Animi.</li>
+        <li>Maxime dolor tempora cum blanditiis, ab neque impedit, nesciunt illum hic at assumenda expedita vel molestias doloribus sapiente vero laboriosam facere a debitis aut? Earum alias ducimus nihil laboriosam autem?</li>
+        <li>Assumenda corrupti molestiae rerum consectetur eligendi culpa dolores, omnis ab magni quasi inventore ex eos. Tenetur incidunt, necessitatibus vero ducimus distinctio aut exercitationem, consequuntur nobis id doloribus minus, praesentium in.</li>
+        <li>Quia ipsa cupiditate ad praesentium itaque quaerat cumque molestias aliquid quibusdam illo reprehenderit earum dicta vero enim recusandae ipsam, sit impedit porro officia in consequuntur aliquam! Eum dolorem id at.</li>
+        <li>Consectetur, sunt perspiciatis! Deleniti alias aliquid dolore quas ducimus in porro esse? Eius laudantium dolore alias officia iure ipsam. Facere reiciendis ut labore adipisci sed deserunt quaerat nam? Rem, ex.</li>
+        <li>Libero cum neque temporibus alias doloribus, voluptatem delectus quod sint quibusdam deleniti tempora nesciunt, totam iure assumenda ipsam. Vero perferendis sit quas, deleniti odit reiciendis dicta perspiciatis voluptatibus placeat minima?</li>
+        <li>Doloribus asperiores suscipit iste voluptatem perspiciatis aspernatur adipisci pariatur repellendus voluptatum mollitia ratione, maxime rerum, officiis fugit corporis? Pariatur aut dignissimos iste autem tempore vitae, accusantium id eos rem laudantium.</li>
+        <li>Asperiores inventore aliquam dolores. Tempora quibusdam expedita voluptate mollitia, deserunt, quo a nisi maiores eius ut delectus animi laborum quis ab. Corporis, impedit accusamus! Sapiente quod laborum consequatur beatae eum?</li>
+        <li>Deleniti eos voluptatibus, quia vel omnis soluta! Nemo quasi obcaecati animi earum? Voluptatem blanditiis in est deserunt, fuga doloribus expedita, dolorum similique beatae animi quibusdam explicabo ex ab. Iure, magnam?</li>
+        <li>Qui impedit, asperiores consequatur quo maxime aut tenetur laudantium! Reiciendis illo incidunt fuga sit voluptate ducimus fugit ipsa, modi sint dolor qui minima nobis quod aspernatur. Placeat reprehenderit quia cupiditate.</li>
+        <li>Nostrum voluptates, nihil libero accusamus vitae veniam ex molestiae aperiam voluptate labore deleniti, dolorem facere corporis eveniet harum earum sint, facilis obcaecati perspiciatis error sequi et ipsa. Beatae, modi ex!</li>
+        <li>Voluptate ullam reiciendis fugit obcaecati? Tempora neque cumque minima vel, eaque amet nihil quae impedit in delectus obcaecati rem maiores veritatis iure quibusdam nobis saepe. Sint possimus illo eius laboriosam!</li>
+    </ol>
+    <button id="btn">Click me</button>
+    
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn").click(function () {
+        // $("*").css("backgroundColor","gray")
+
+        // this is reprecnted in current element jene tame call karo tane par j work kare
+
+        // $(this).css("backgroundColor","gray")
+        // $("[type]").hide("slow")
+
+            $("li:even").css("fontSize","45px")
+            $("li:odd").css("color","red")
+            $("li:first-child").css("backgroundColor","gray")
+        })
+    });
+
+</script>
+</html>

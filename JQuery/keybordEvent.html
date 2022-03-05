@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keybord event in jquray</title>
+</head>
+<body>
+    <!-- jQuery is three type of keybode event
+    1>keyup:event fired when a key is released on the keyboard
+    2>keydown(): evemt is fired when key is pressed on the keybord
+    3>keypress(): event fired when a key is pressed on the keybord 
+      keypress is inscal stage
+        keydown is final stage-->
+        <label for="">user name</label>
+        <input type="text" name="in">
+        <label for="">phone</label>
+        <input type="phone" name="ph" id="ph">
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+      $("input").keypress(function(){
+          $(this).css("background","gray")
+      })  
+
+    });
+    // $(document).ready(function () {
+    //   $(".ph").keydown(function(){
+    //       $(this).css("background","gray")
+    //   })  
+
+    // });
+    $(document).ready(function () {
+      $(".ph").keyup(function(){
+          $(this).css("background","gray")
+      })  
+
+    });
+</script>
+</html>

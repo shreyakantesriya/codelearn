@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading effect and fedein</title>
+    <style>
+        h1 {
+            text-align: center;
+            border-bottom: 4px solid black;
+
+        }
+
+        .box {
+            border: 4px solid black;
+            background: blueviolet;
+            margin: 2rem;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>with jquery in fadein and fadeout and fadetoggel effict</h1>
+    <button id="fi">fadein</button>
+    <button id="fo">fadeout</button>
+    <button id="ft">fadetoggel</button>
+    <button id="fto">fadeTo</button>
+    <hr>
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box"></div>
+    <div id="box4" class="box"></div>
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#box1").css("background", "red")
+        $("#box2").css("background", "green")
+        $("#box3").css("background", "blue")
+        $("#box4").css("background", "gray")
+        $("#fo").click(function () {
+
+            $("#box1").fadeOut()
+            $("#box2").fadeOut("slow")
+            $("#box3").fadeOut(3000)
+            $("#box4").fadeOut(5000)
+        })
+        $("#fi").click(function () {
+
+            $("#box1").fadeIn()
+            $("#box2").fadeIn("slow")
+            $("#box3").fadeIn(3000)
+            $("#box4").fadeIn(5000)
+        })
+        $("#ft").click(function () {
+
+            $("#box1").fadeToggle()
+            $("#box2").fadeToggle("slow")
+            $("#box3").fadeToggle(3000)
+            $("#box4").fadeToggle(5000)
+        })
+        $("#fto").click(function () {
+
+            $("#box1").fadeToggle()
+            $("#box2").fadeToggle("slow")
+            $("#box3").fadeToggle(3000)
+            $("#box4").fadeToggle(5000)
+        })
+
+    });
+</script>
+
+</html>

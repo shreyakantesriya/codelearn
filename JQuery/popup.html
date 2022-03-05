@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert PopUp plugin for jquery</title>
+    <style>
+        button{
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%)
+        }
+    </style>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <button onclick="popUp()">Click</button>
+</body>
+<script>
+    function popUp(){
+        swal("Good job!", "You clicked the button!", "success");
+        swal("Try again!", "You clicked the button!", "error");
+        swal({
+  title: "sorry!",
+  text: "You clicked the button!",
+  icon: "error",
+  button:"try Again!",
+});
+    }
+</script>
+</html>

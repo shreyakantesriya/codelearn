@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click and doubleclick in deffrent in jQurey</title>
+    <style>
+        .main .one{
+            border: 2px solid black;
+            height: 300px;
+            width: 200px;
+            display: inline-block;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius:40px ;
+            border-right-width: 10px;
+        }
+        .main .two{
+            border: 2px solid black;
+            height: 300px;
+            width: 200px;
+            display: inline-block;
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border-right-width: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+    </div>
+    <button id="btn">click</button>
+</body>
+<script src="jquery-3.6.0.min.js">
+</script>
+<script>
+    // hide and show is use in effect method
+
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            $(".one").css("background","blue");
+            // $(".one").show()
+            // $(".two").hide()
+            $(".main").hide("slow")
+        })
+    });
+    $(document).ready(function () {
+        $("#btn").dblclick(function () {
+            $(".two").css("background","green");
+            // $(".two").show()
+            // $(".one").hide()
+            $(".main").show("slow")
+        })
+    });
+</script>
+</html>

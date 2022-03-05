@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slidedown and slideup in jquery</title>
+    <style>
+        h1{
+            border:2px solid black;
+            padding: 1rem;
+            text-align: center;
+            color:white;
+            background: rgb(196, 187, 187);
+            margin: 2rem;
+        }
+        #flip{
+            border:4px solid black;
+            padding: 2rem;
+            text-align: center;
+            font-size: 30px;
+            margin:0px 2rem;
+            margin-bottom: 0px;
+            color:white;
+            background-color: rgb(87, 114, 87);
+        }
+        #panel{
+            color:white;
+            padding: 2rem;
+            border:4px solid black;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 0px;
+            margin:0px 2rem;
+            background-color: rgb(64, 117, 64);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>slidedown and slideup effect</h1>
+    <div id="flip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse ipsa cupiditate nam velit voluptatum blanditiis dolorembque laboriosam facere enim quia reprehenderit necessitatibus quas, error provident veniam ducimus itaque minima?</div>
+    <div id="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laudantium veniam quos, nam dolorum accusantium voluptatibus? Neque vel quod debitis voluptatum eos cum. Ut dolorum, alias ab omnis error minima tempore repellat ducimus facilis. Exercitationem iusto praesentium maxime qui eaque facere repellendus deleniti doloremque quas, nesciunt fuga dolorem voluptatum possimus debitis vitae consectetur hic, impedit obcaecati. Fuga repellat esse assumenda harum autem illum quis accusamus laudantium amet in odit, repudiandae veritatis fugit laboriosam minus nesciunt asperiores eos nemo, alias excepturi. Suscipit quisquam in quam? Distinctio laborum labore excepturi quibusdam fuga, commodi nisi, illum cupiditate ad amet maiores necessitatibus non quisquam. Aut sequi vitae adipisci aliquid, ea exercitationem dolorum aperiam aspernatur beatae aliquam eos voluptatum reiciendis accusantium esse. Voluptatibus veniam doloremque possimus saepe dicta obcaecati! Explicabo ab illo magnam consequatur non odio totam nostrum, quasi harum nobis placeat at quisquam perferendis rerum tempora nisi voluptate eligendi cupiditate odit. Magnam iste similique quod in dolore consequuntur assumenda eos aspernatur enim amet voluptas sint ex dolorum consequatur officiis tempore, aliquam culpa itaque exercitationem, impedit, praesentium adipisci? Ratione iure quas officia accusantium veritatis saepe mollitia perferendis illo, doloremque culpa molestias rerum sunt a vel temporibus aliquam exercitationem reiciendis doloribus praesentium facere? Illum, consequuntur ab!</div>
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // $("#flip").click(function(){
+        //     $("#panel").show()
+        // })
+        // $("#flip").dblclick(function(){
+        //     $("#panel").hide()
+        // })
+        // $("#flip").click(function(){
+        //     $("#panel").toggle("slow")
+        // })
+        // $("#flip").click(function(){
+        //     $("#panel").slideDown("slow")
+        // })
+        // $("#flip").dblclick(function(){
+        //     $("#panel").slideUp("slow")
+        // })
+        $("#flip").click(function(){
+            $("#panel").slideToggle("slow")
+        })
+    
+    });
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focuse event and blur event</title>
+</head>
+<body>
+    <h1>focus() and blur()</h1>
+    <span id="show12"><h2>welcome</h2></span>
+    <span id="hide"><h2>Thank you</h2></span>
+    <input type="text" name="" id="fb">
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("span").css("display","none")
+        $("#fb").focus(function(){
+            // $("#show12").css("display","inline").fadeOut(4000)
+            $("#show12").show("slow")
+            $("#hide").hide("slow")
+        })
+        $("#fb").blur(function(){
+            // $("#hide").css("display","inline").fadeOut(4000)
+            $("#hide").show("slow")
+            $("#show12").hide("slow")
+        })
+    });
+</script>
+</html>

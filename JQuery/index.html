@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="test" class="test1">I am going to hied
+    </div>
+    <button onclick="hide()" id="hide1">++</button>
+    <div id="test" class="test2">I am going to show
+    </div>
+        <button onclick="hide()" id="hide2">--</button>
+
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+// by javascipt
+    // document.getElementById("test").innerHTML = "Hello  world by javascipt"
+
+    // function hide() {
+    //     document.getElementById("test").style.display = "none"
+        
+    // }
+
+// by JQuery
+    // $(document).ready(function () {
+    //     $("#test").text("Hello world by JQuery")
+    // });
+
+    $(document).ready(function () {
+        $('#hide1').click(function () {
+            $('.test1').hide()
+            $('.test2').show()
+        })
+    });
+    $(document).ready(function () {
+        $('#hide2').click(function () {
+            $('.test1').show()
+            $('.test2').hide()
+        })
+    });
+</script>
+
+</html>

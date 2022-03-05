@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event in jquery</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus temporibus quibusdam pariatur labore eum exercitationem illo modi molestiae alias, distinctio id. Consequuntur animi magnam, nostrum dignissimos natus facere. Necessitatibus, illum?</p>
+
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("p").mouseenter(function(){
+            
+            $(this).css("font-size","45px")
+        })
+        $("p").mousemove(function(){
+            
+            $(this).css("color","red")
+        })
+        $("p").mouseout(function(){
+            
+            $(this).css("color","green")
+        })
+        $("p").mouseleave(function(){
+            
+            $(this).css("background","gray")
+        })
+        $("p").mouseup(function(){
+            
+            $(this).css("color","blue")
+        })
+        $("p").mousedown(function(){
+            
+            $(this).css("color","black")
+        })
+    });
+</script>
+</html>

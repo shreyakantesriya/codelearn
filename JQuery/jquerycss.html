@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="#" id ="action">Welcome to css apply in jqeury</a>
+
+    </div>
+    <div>
+        <button class="btn">Click Me</button>
+
+    </div>
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    // use in jquery in css syntat : css("propertyname","value");only for one css apply
+    // $(document).ready(function () {
+    //     $(".btn").click(function () {
+    //         $("#action").css("text-decoration","none")
+    //     });
+    // });
+
+        // multipal css use
+
+    $(document).ready(function () {
+        $(".btn").click(function () {
+            $("#action").css({
+                "text-decoration":"none",
+                "font-size":"45px",
+                "color":"green",
+                "background":"gray"
+                
+            });
+        });
+    });
+</script>
+</html>

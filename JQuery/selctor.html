@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test{
+            background: rgba(255, 0, 0, 0.185);
+            border: 2px solid black;
+        }
+        #test1{
+            background: rgba(184, 84, 84, 0.932);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p class="test">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, ut! Ex aliquid suscipit, quibusdam aspernatur cumque repudiandae rem voluptates facere, necessitatibus reiciendis, quos officiis delectus quisquam accusantium harum repellendus labore quas. Eius quibusdam vitae laboriosam voluptas, quae harum. Reprehenderit voluptatum cum suscipit qui dolorum atque, voluptatibus sequi quisquam reiciendis non saepe nostrum consequatur perspiciatis labore repellendus blanditiis, placeat facere beatae facilis ratione libero minus. Ipsum, ut adipisci? Tempora obcaecati sapiente earum corrupti minus nemo unde temporibus exercitationem doloribus asperiores libero aliquid est, beatae voluptatum, molestiae adipisci quasi, veniam vitae soluta in quas? Facere, culpa quaerat deleniti distinctio esse earum harum!</p>
+    <p id="test1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ex nemo eaque, laudantium porro et? Facere quos similique, sed inventore dolor itaque, nam atque dolore quas, dolorem provident magni maiores voluptatum at non vel sequi ullam commodi asperiores officiis! Rerum, quidem maiores tempore laborum hic ducimus debitis exercitationem dolor. Asperiores alias, cupiditate eius debitis nihil maiores nisi! Ipsa id neque perferendis et distinctio natus repellendus eligendi? Eos omnis voluptates cumque, quos inventore excepturi aspernatur pariatur! Adipisci dicta aliquam placeat delectus quaerat in? Illum, dolorum, libero exercitationem aliquid magni, quidem commodi in sunt labore sit reiciendis tempora quasi error soluta animi.</p>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laboriosam fugit excepturi voluptatibus quisquam enim cumque et dolorem reprehenderit accusamus libero, eius perspiciatis assumenda atque ea voluptates odio ullam ipsum.</li><br>
+        <li>Neque doloremque facere modi ex in fuga quibusdam minima aliquid possimus quod exercitationem aspernatur, nostrum dolores atque eos hic pariatur libero similique quas illum assumenda voluptatum tempora iure. Atque, veritatis.</li>
+    </ul>
+    <button class="btn">click</button>
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".btn").click(function () {
+            $('.test').hide()
+        })
+    });
+    $(document).ready(function () {
+        $(".btn").click(function () {
+            $('li:first').hide()
+        })
+    });
+</script>
+</html>
