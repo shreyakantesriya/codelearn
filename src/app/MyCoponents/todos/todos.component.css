@@ -1,0 +1,17 @@
+.todos{
+    border: 3px dashed rgb(94, 93, 93);
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    color: rgba(158, 173, 16, 0.973);
+    background: rgb(250, 246, 229);
+    border-radius: 10px;
+}
+.heading{
+    justify-content: center;
+    border-bottom: 4px dotted rgb(66, 24, 255);
+    padding: 2rem;
+    width: 70%;
+    border-radius: 50px;
+    /* margin-left: 20rem; */
+}

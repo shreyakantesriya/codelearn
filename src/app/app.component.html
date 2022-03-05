@@ -1,105 +1,36 @@
-<div class="container">
-  <form action="" [formGroup]="regForm"  (ngSubmit) = "onFormSubmit(regForm.value)">
-    <table>
-      <tr>
-        <td>
-          <mat-form-field class="demo-Full-width">
-            <input formControlName="fname" mutInput placeholder="Enter your frist Name">
-          </mat-form-field>
-          <mat-error>
-            <span *ngIf="!regForm.get('fname')?.valid && regForm.get('fname')?.touched">Places enter your frist name</span>
-          </mat-error>
-        </td>
-        <td>
-          <mat-form-field class="demo-Full-width">
-            <input formControlName="lname" mutInput placeholder="Enter your Last Name">
-          </mat-form-field>
-          <mat-error>
-            <span *ngIf="!regForm.get('lname')?.valid&&regForm.get('lname')?.touched">Places enter your last name</span>
-          </mat-error>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <mat-form-field class="demo-Full-width">
-            <textarea formControlName="Address" mutInput placeholder="Enter your Address"></textarea>
-          </mat-form-field>
-          <mat-error>
-            <span *ngIf="!regForm.get('Address')?.valid &&regForm.get('Address')?.touched">Places enter your Address
-              name</span>
-          </mat-error>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <mat-form-field class="demo-Full-width">
-            <input formControlName="DOB" mutInput [matDatepicker]="picker" placeholder="Enter your Brith date">
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker touchUi="true" #picker></mat-datepicker>
-          </mat-form-field>
-          <mat-error>
-            <span *ngIf="!regForm.get('DOB')?.valid&&regForm.get('DOB')?.touched">Places select youre brithdate</span>
-          </mat-error>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span>Gender:</span><br><br>
-          <mat-radio-group formControlName="gender" >
-            <mat-radio-button value="male">male</mat-radio-button>
-            <mat-radio-button value="female">Female</mat-radio-button>
-          </mat-radio-group>
-          <mat-error>
-            <span *ngIf="!regForm.get('gender')?.valid&&regForm.get('gender')?.touched">Places select your gender</span>
-          </mat-error>
-        </td>
-      </tr>
-      <tr>
-      <td>
-        <br>
-        <mat-form-field>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-info" href="#">@SK@</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
 
-          <mat-select formControlName="game" placeholder="Select youre Game">
-            <mat-option>None</mat-option>
-            <mat-option value="cricket">Cricket</mat-option>
-            <mat-option value="footballe">Footbolle</mat-option>
-            <mat-option value="hocky">hocky</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-error>
-          <span *ngIf="!regForm.get('game')?.valid&&regForm.get('game')?.touched">Places select your game</span>
-        </mat-error>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <mat-form-field class="demo-Full-width">
-          <input formControlName="email" mutInput placeholder="Enter your Email">
-          <mat-hint>user like : abc@gmail.com</mat-hint>
-        </mat-form-field>
-        <mat-error>
-          <span *ngIf="!regForm.get('email')?.valid&&regForm.get('email')?.touched">Places enter your EmailId</span>
-        </mat-error>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" >
-        <mat-slide-toggle formControlName="IsAccepted" (change)="onChange($event)">Accecpt Terems and condtion </mat-slide-toggle>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" class="content-center">
-        <button mat-raised-button color="accent" [disabled]="!regForm.valid || IsAccepted==0">Accent</button>
-      </td>
-    </tr>
-    <tr>
-      <td></td>
-    </tr>
 
-    </table>
-  </form>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-info" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-2">
+
+
+    <h1 class="text-center mb-3 text-primary heading">Welcome to TodoList</h1>
+    <app-todos></app-todos>
+  </div>
 </div>
-
-
-
-

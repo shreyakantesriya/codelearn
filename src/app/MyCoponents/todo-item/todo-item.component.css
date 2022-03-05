@@ -1,0 +1,16 @@
+.contain{
+    border-left: 4px double rgba(9, 43, 238, 0.932);
+    padding-left: 1rem  ;
+    border-right: 4px double rgba(9, 43, 238, 0.932);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom: 5px double rgb(177, 32, 32);
+    padding-bottom: 2rem;
+    border-top: 5px double rgb(177, 32, 32);
+    padding-top: 2rem;
+    background: rgb(241, 241, 241);
+}
+.strike{
+    text-decoration: line-through;
+}
+                
