@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+          table {
+            width: 100%;
+            height: 500px;
+            border-collapse: collapse;
+            margin-top:5rem;
+
+        }
+
+        table,
+        tr,
+        td {
+            border: 2px solid black;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="table-primary  table-hovern table-striped table-responsive-sm">
+            <tr>
+                <td rowspan="2" colspan="2">A</td>
+                <td>B</td>
+                <td >C</td>
+                <td colspan="2">D</td>
+                <!-- <td colspan="2" rowspan="2">E</td> -->
+    
+    
+            </tr>
+            <tr>
+                <td rowspan="2">E</td>
+                <td>F</td>
+                <td>G</td>
+                <td >H</td>
+                <!-- <td>I</td>
+      -->
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>J</td>
+                <td rowspan="2">K</td>
+                <td>L</td>
+                <td>M</td>
+               
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>O</td>
+                <td>P</td>
+                <td colspan="3">Q</td>
+    
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
