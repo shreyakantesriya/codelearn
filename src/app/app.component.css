@@ -1,0 +1,21 @@
+table,tr,td,th{
+    border: 2px solid black;
+    
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+
+.one{
+    color:red;
+}
+.two{
+    font-size: 2rem;
+}
+.three{
+    color: blueviolet;
+}
+.foure{
+    font-size: 4rem;
+}

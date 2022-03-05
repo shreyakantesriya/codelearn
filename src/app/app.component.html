@@ -1,0 +1,158 @@
+<h1>Welcome to {{title}}</h1>
+<hr>
+<div>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolorum sapiente, beatae fugiat explicabo asperiores deserunt reiciendis sit cumque qui pariatur culpa. Eum velit quibusdam quos ipsum quas itaque dolorum! Fuga quidem ex id, qui tempora placeat! Id architecto corrupti delectus ducimus laudantium tenetur ut perspiciatis asperiores pariatur. Dolor eligendi iusto cumque eos, facilis laudantium earum placeat veritatis, perspiciatis quasi praesentium itaque illo officiis quidem dolorem at id. Magnam distinctio similique harum sequi, nemo esse voluptas recusandae                                                     ipsum impedit dolorem soluta excepturi obcaecati est repellendus nulla ad quis quos! Ipsum impedit animi incidunt ipsam asperiores officiis voluptatum excepturi modi. Minima.
+</div>
+<button>Add</button> <button>Add</button> <button>Add</button> <button>Add</button>  <button>Add</button> <button>Add</button>
+<h2>This is component example</h2>
+<!-- <div *ngIf = "checkngIf">This is ngif example</div> -->
+<h2>usige ngif </h2>
+<input type="radio" name="gender" (click)="changevalue(true)">True
+<input type="radio" name="gender" (click)="changevalue(false)">False
+<div *ngIf = "isValid">This is valid validation</div>
+<div *ngIf = "!isValid">This is not valid validation</div>
+
+<!-- <button (click) = "btnClick()">Click me</button> -->
+<p [ngStyle]="{'color':'red'}">this is ng style example</p>
+
+<h2>using ngswitch</h2>
+<select name="" id="" (change)="setValue($event)">
+  <option value="">--select--</option>
+  <option value="one">one</option>
+  <option value="two">two</option>
+  <option value="three">three</option>
+  <option value="foure">foure</option>
+  <option value="another">another</option>
+</select>
+<div [ngSwitch]="choose">
+  <h3 *ngSwitchCase="'one'">frist</h3>
+  <h3 *ngSwitchCase="'two'">Second</h3>
+  <h3 *ngSwitchCase="'three'">Thrid</h3>
+  <h3 *ngSwitchCase="'foure'">Foure</h3>
+  <h3 *ngSwitchDefault>Five</h3>
+
+
+</div>
+
+<h2>ngfor loop</h2>
+
+<ul  >
+  <li *ngFor ="let  Student of  Students ;  let i = index ; let f=first ; let l = last ;let o = odd; let e = even " >{{i+1}} : {{Student.name}} : {{f}} : {{l}} : {{o}} : {{e}}</li>
+</ul>
+
+<h2>Treak by ngfor loop</h2>
+<table>
+  <tr>
+    <td>Index</td>
+    <td>Id</td>
+    <td>Name</td>
+    <td>course</td>
+  </tr>
+  <tr *ngFor = "let  Student of  Students ; let i = index ;  trackBy: trackBystudentid" >
+    <td>{{i}}</td>
+    <td>{{Student.id}}</td>
+    <td>{{Student.name}}</td>
+    <td>{{Student. course}}</td>
+  </tr>
+
+</table>
+<br>
+<button (click)= "getmoreStudents()">AddData</button>
+
+<h2>Grouping ngFor</h2>
+
+<ul *ngFor = "let c of CounteryDetalies">
+  <li>{{c.contrey}}</li>
+  <ul>
+    <li *ngFor = "let p of c.people">{{p.name}}</li>
+  </ul>
+
+</ul>
+
+<h2>ngstyle</h2>
+<ul *ngFor="let pe of people1">
+  <!-- <li [ngStyle] ="{'color':getColor(pe.conter)}">
+    {{pe.name}} - {{pe.conter}} 
+  </li> -->
+</ul>
+
+<h2>NgClass</h2>
+<p ngClass="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis possimus quisquam, enim deleniti minus unde totam rerum, recusandae quae porro dolore corrupti maiores voluptatum praesentium quam debitis ipsum maxime.</p>
+<p ngClass="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo molestiae illo inventore magni unde dignissimos qui ipsum id facere nemo beatae, incidunt fugiat dolores repellat impedit cumque distinctio exercitationem! Soluta.</p>
+<p ngClass="three">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nesciunt quis quam laboriosam culpa, dolorum perferendis. Optio quidem voluptates reiciendis veritatis sit perspiciatis, soluta nobis culpa eveniet rem nulla! Maxime!</p>
+<p ngClass="foure">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima dolorem aperiam non impedit quidem totam et officia voluptatum! Laudantium natus ratione perferendis laboriosam magni beatae eos, reprehenderit fugit assumenda animi.</p>
+
+<h2>Welcome to {{title}}</h2>
+
+<h2>property binding</h2>
+<span [innerHTML]='title'></span>
+<span [innerHTML]="fname"></span>
+<h2>attribute binding</h2>
+<table height="200" width="500">
+  <tr>
+    <td [attr.colspan]="cols">student Details</td>
+   
+  </tr>
+  <tr>
+    <td>Id</td>
+    <td>Name</td>
+    <td>class</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Manv</td>
+    <td>Angular</td>
+  </tr>
+</table>
+
+<h2>Event Binding</h2>
+<button (click)="onClick()">Click</button>
+
+<!-- <h2>Two way data bunding</h2>
+Enter your store name : <input  [value]='Data' (input)='Data=$event.target.value'>
+Your store name:{{Data}} -->
+
+<h2>pipes in exampls</h2>
+<table>
+  <tr>
+    <th>EmployeeId</th>
+    <th>Name</th>
+    <th>MoblieNo</th>
+    <th>Salary</th>
+    <th>Gender</th>
+
+  </tr>
+  <tr *ngFor ="let e of employee">
+    <td>{{e.id}}</td>
+    <td>{{e.name | myPipe:e.gender}}</td>
+    <td>{{e.moNo }}</td>
+    <td>{{e.salary|currency : "INR" :'code'}}</td>
+    <td>{{e.gender}}</td>
+  </tr>
+</table>
+
+<h2>Router link Example</h2>
+<div>
+  <a [routerLink]="['/studentRigtion']">Student Regtion</a>
+
+</div>
+
+<!-- <h2>Server side Router</h2>                                                                                                                <button  (click)="student()">Student Regtion detailes</button><br><br> -->
+
+<a [routerLink]="['/details']"> Detailes</a>
+
+<h1>Service</h1>    
+<h3>{{text}}</h3>
+<table>
+  <tr *ngFor = "let em of emp ">
+    <td>{{em.id}}</td>
+    <td>{{em.name}}</td>
+
+  </tr>
+</table>
+
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
