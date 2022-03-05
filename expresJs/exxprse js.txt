@@ -1,0 +1,8 @@
+*What is expres js
+
+excpressjs is nodejs fremwork its the most populer freamwork as of now (the most starred npm)
+
+Expressjs is a web appliction freamwork that provides you with a simple api to bulit websits ,web app, and back ends
+
+* why do we actually need express.js? How it is useful for us to use with nodejs?
+try to write a small rest api server in plain nodejs (that is using only core mpodules) and then in express js .the latter wii take you 5-10x less time and lines code.

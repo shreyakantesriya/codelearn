@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Static websites</title>
+    <style>
+        body{
+    margin: 5rem 10rem;
+   
+    background:url("1.jpeg"),linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.192));
+    opacity: 1;
+    z-index:100;
+    
+
+}
+.container{
+    margin-top: 3rem;
+    border: 4px dotted gray;
+    box-shadow: (5px 5px 20px 10px rgba(0, 0, 0, 0.425));
+}
+h1{
+    color: rgb(14, 31, 14);
+    display: grid;
+    justify-items: center;
+    border-bottom: 3px double gray;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    /* border-bottom-width: 50%; */
+    /* align-items: center; */
+}
+p{
+    color: rgb(107, 28, 28);
+    font-size: 2rem;
+    padding: 2rem;
+}
+.but{
+    /* margin-bottom: 1rem; */
+    /* margin-left: 30rem; */
+    margin-right: 1rem;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">sing In</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            
+            </ul>
+            <button type="button" class="btn btn-danger but ">SIGN IN</button>
+
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+
+        <h1>Welcome to the new home</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo animi laboriosam eveniet officia doloribus
+            esse. Quaerat rem minus aspernatur eligendi quos, consectetur distinctio commodi natus, eveniet, ut ratione
+            veniam nostrum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sit nesciunt culpa,
+            eveniet quas fugit soluta distinctio voluptatum iusto vero modi odio. Fugit consequatur accusantium minus
+            nulla dolorem molestiae voluptas.</p>
+          
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+   {{>footer}}
+</body>
+
+</html>
