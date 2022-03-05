@@ -1,0 +1,1 @@
+     const user = new Employe(req.body);
