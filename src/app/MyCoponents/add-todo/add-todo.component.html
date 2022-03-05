@@ -1,0 +1,20 @@
+<div class="mb-4 my-4 add">
+    <h4 class="my-4">Add Todo</h4>
+    <form #ngForm='ngForm' (ngSubmit)="onSubmit()" >
+        
+        <div class="mb-3">
+            <label for="title" class="form-label" required>Todo Title</label>
+            <input type="text" [(ngModel)]="title" class="form-control" id="title" name="title"  text1 ngModel required #text1="ngModel">
+            <span class="help text-danger"*ngIf="text1.touched && !text1.valid">Plesece Enter the title</span>
+
+        </div>
+        <div class="mb-3">
+            <label for="decs"  class="form-label">Description</label>
+            <input type="text"[(ngModel)]="decs"  class="form-control" id="decs "name="decs" text ngModel #text="ngModel" required>
+            <span class="help text-danger"*ngIf="text.touched && !text.valid">Plesece Enter the Description</span>
+        </div>
+
+        <button type="submit" class="btn btn-outline-danger" [disabled]="!ngForm.valid">Add</button>
+        <!-- <button type="submit" class="btn btn-outline-danger" >Reset</button> -->
+    </form>
+</div>

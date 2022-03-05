@@ -1,0 +1,13 @@
+
+<div class="my-3 contain">
+
+
+    <h3 class="text-danger" [ngClass]="{'strike': !todo.active}">{{todo.title}}</h3>
+    <p class="text-success" [ngClass]="{'strike': !todo.active}"> {{todo.decs}}</p>
+    <div class="mb-3">
+        <input type="checkbox" class="form-check-input" id="done{{i}}" (click)="onCheckboxClick(todo)" [checked]="!this.todo.active">
+        <label class="markdone text-success" for="done {{i}}"  > Done</label>
+    </div>
+    <button class="btn btn-outline-success btn-sm" (click)="onClick(todo)">Delete</button>
+
+</div>

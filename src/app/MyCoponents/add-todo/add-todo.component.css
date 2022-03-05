@@ -1,0 +1,24 @@
+.add{
+    border: 3px dashed rgb(12, 107, 136);
+    padding: 2rem;
+    color: rgb(23, 88, 6);
+    border-radius: 10px;
+    background: rgb(250, 245, 245);
+    
+}
+.add h4{
+    border-bottom: 5px double rgb(3, 53, 7);
+    padding: 1rem;
+    width: 30%;
+    font-size: 2rem;
+}
+.add label{
+    font-size: 1.5rem;
+}
+input.ng-invalid.ng-touched{
+    border: 2px solid red;
+}   
+
+input.ng-valid.ng-touched{
+    border: 2px solid green;
+}
