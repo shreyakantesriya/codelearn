@@ -1,0 +1,1 @@
+// global execution contxt: Global execution context this is the defualt execution context in which js code start its execution when the file first loads in the browser an execution context is an abstrat concepts of an enviroment where the javascript code is evaluated and executed.
