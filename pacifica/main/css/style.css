@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 500px;
+}
+
+
+/* logo css */
+
+.pacifica-logo {
+    height: 100px;
+}
+
+.logo {
+    margin-left: 50%;
+    height: 100%;
+    /* width: 200px; */
+}
+
+
+/* hearder style */
+
+.header {
+    background: #262163;
+    color: #FFFEFF;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+/* quick links componet css */
+
+.header-link {
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.header-link p {
+    font-size: 1rem;
+}
+
+.header-link-one,
+.header-link-three,
+.header-link-five,
+.header-link-seven,
+.header-link-nine {
+    background: #3C3972;
+    color: #FFFEFF;
+}
+
+.header-link-two,
+.header-link-four,
+.header-link-six,
+.header-link-eight {
+    background: #FFFEFF;
+    color: #3C3972;
+}
+
+.header-link-two:hover,
+.header-link-four:hover,
+.header-link-six:hover,
+.header-link-eight:hover {
+    background: #b9b5b9;
+}
+
+.header-link-one:hover,
+.header-link-three:hover,
+.header-link-five:hover,
+.header-link-seven:hover,
+.header-link-nine:hover {
+    background: #8985cf;
+}
+
+
+/* main carosel css */
+.cero{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.cero-inner{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.cer{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.main-carosel {
+    margin-top: 1rem;
+    /* width: 100%; */
+}
+.previ{
+    left: 27%;
+    top : 14%;
+}
+.next{
+    right: 27%;
+    top: 14%;
+}
+/* button.carousel-control-prev {
+   
+    left: 27%;
+    top: 93%;
+}
+button.carousel-control-next {
+    right: 27%;
+    top: 93%;
+} */
+.text{
+    left:0%;
+    right:0%;
+    bottom: -1.75rem;
+}
+.carosel-img {
+    opacity: 0.7;
+    width: 100%;
+    background-position: center;
+    height: 480px
+}
+
+.carousel-text {
+    display: block;
+    background: rgba(0, 0, 0, 0.384);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0px;
+    height: 80px;
+    margin: 0px 0px 0px 0px;
+    /* opacity: 0.5; */
+    width: 100%;
+}
+
+
+/* image css */
+
+.img_pacific {
+    margin: 4rem;
+    height: 400px;
+    width: 300px;
+}
+/* line css */
+.main-div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* height: 50%; */
+    
+}
+
+
+.arrow{
+    background: #21205F;
+    color:#fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4px;
+    height: 35px;
+    border: 2px solid #21205F;
+}
+.marqueee{
+    padding: 0px  !important;
+    width: 0; 
+    height: 0; 
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent; 
+    border-left:10px solid #21205F ;
+     
+}
+.info{
+    border-top:2px solid #21205F;
+    border-right:2px solid #21205F;
+    border-bottom:2px solid #21205F;
+    padding-top:6px;
+}
+/* library component css */
+.document{
+    margin-bottom: 0.1rem;
+    height: 90%;
+}
+.library {
+    margin: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #FFFEFF;
+}
+
+.library-one,
+.library-four,
+.library-five {
+    background: #229E56;
+    padding: 1rem;
+}
+
+.library-two,
+.library-three,
+.library-six {
+    background: #3C3972;
+    padding: 1rem;
+}
+
+.library-one:hover,
+.library-four:hover,
+.library-five:hover {
+    background: #64ce90;
+}
+
+.library-two:hover,
+.library-three:hover,
+.library-six:hover {
+    background: #7f7bce;
+}
+
+
+/* calendar */
+
+.calMonth {
+    text-align: center;
+    font-size: 0.5rem;
+    color: #21205F;
+}
+
+.btnCal {
+    margin-top: 21px;
+    background: #21205F;
+    color: #ffff;
+    /* width: 13%; */
+}
+
+.btnDiv {
+    /* padding:1rem; */
+    text-align: end;
+    margin: 0px;
+}
+
+.weeksdays {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background: #21205F;
+    color: #fff;
+    text-align: center;
+    /* width: 100%;  */
+}
+
+.weeksdays span {
+    border: 1px solid white;
+    padding: 2px;
+    /* font-size: 1.2rem; */
+}
+
+.days {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.days div {
+    border: 1px solid rgb(212, 210, 210);
+    text-align:end;
+    padding-bottom: 20%;
+    /* font-size: 2rem; */
+}
+
+.days div:hover {
+    background: rgb(192, 192, 192);
+}
+
+.next-date {
+    opacity: 0.4;
+}
+
+.prev-date {
+    opacity: 0.4;
+}
+
+.prev-date:hover,
+.next-date:hover {
+    background: none;
+    opacity: 0.1;
+}
+
+.today {
+    background: #21205F;
+    color: white;
+}
+
+
+/* weather */
+
+.weatherMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 500px;
+    /* background: linear-gradient(180deg, #00d0f58a, #ff7b008c); */
+    /* font-size: 1.5rem; */
+}
+
+.card {
+    background: linear-gradient(50deg, rgba(64, 241, 138, 0.514), rgba(252, 78, 78, 0.788));
+    padding: 2em;
+    border-radius: 30px;
+    height: 440px;
+    width: 100%;
+    margin: 1em;
+    max-width: 420px;
+    color: rgb(63, 58, 58);
+    /* color:rgb(255, 255, 255); */
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.438);
+}
+
+h1.temp {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serachBtn {
+    margin: 0.5em;
+    border-radius: 5px;
+    border: none;
+    /* height: 46px;
+    width: 20px; */
+    outline: none;
+    background: rgba(0, 0, 0, 0.295);
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 1rem;
+    /* padding: 0.5em 1em; */
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.295);
+    color: white;
+    /* width: calc(100%-100px); */
+    /* font-size: 1rem; */
+}
+
+.city {
+    margin-top: 1rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.humidity {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.wind {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.serachBtn:hover {
+    background: rgba(0, 0, 0, 0.432);
+}
+
+.weather.loading {
+    visibility: hidden;
+    position: relative;
+    max-width: 20px;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading..";
+    height: 20px;
+    color: rgb(63, 58, 58);
+    position: absolute;
+    top: 0px
+}
+
+
+/* commnpany diractior css */
+
+.satff-info {
+    margin: 2rem;
+}
+
+.user-img {
+    margin-top: 1rem;
+    height: 80px;
+    width: 80px;
+}
+
+.user-info {
+    padding-left: 1rem;
+    color: #262163;
+}
+
+.user-info-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.scrollee {
+    height: 370px;
+    overflow: auto;
+}
+
+
+/* news css */
+
+.news-info {
+    margin: 1rem;
+}
+
+.news-img {
+    height: 80px;
+    width: 80px;
+}
+
+.news {
+    color: #262163;
+}
+
+.news-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.scroll {
+    height: 400px;
+    overflow: auto;
+}
+
+
+/* map css */
+
+.map-main {
+    height: 100%;
+}
+
+
+/* brithday css */
+
+.main-slider {
+    width: 100%;
+}
+.caro-text{
+    left:0%;
+    right:0%;
+    bottom:-5%;
+}
+.brithday-inner {
+    margin-left: 1rem;
+    width: 90%;
+}
+
+.brithday-img {
+    width: 100%;
+    height: 400px;
+    /* width: 100px; */
+}
+
+.brithday-text {
+    /* border :2px solid black; */
+    display: block;
+    background: rgba(0, 0, 0, 0.384);
+    color: #100863;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0px;
+    height: 70px;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+
+/* emplyoee feedback in css */
+
+.emp-main-info {
+    margin: 2rem;
+}
+
+.emp-img {
+    margin-top: 0.1rem;
+    height: 80px;
+    width: 80px;
+}
+
+.emp-info {
+    color: #262163;
+    font-size: 1rem;
+}
+
+.emp-info-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.scrolle {
+    overflow: auto;
+    height: 390px;
+}
+
+
+/* new employee */
+
+.new-emp-info {
+    margin: 2rem;
+}
+
+.user-img {
+    margin-top: 1rem;
+    height: 80px;
+    width: 80px;
+}
+
+.new-user-info {
+    color: #262163;
+}
+
+.new-emp-info-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.new-emp {
+    padding-left: 1rem;
+}
+
+.new-emp-date {
+    padding-left: 1.5rem;
+}
+
+.srcoll {
+    height: 400px;
+    overflow: auto;
+}
+/* footer */
+.footer{
+    /* display: flex; */
+    margin-top: 5px;
+    background: #262163;
+    color:#fff;
+    padding:2rem;
+    text-align: center;
+    opacity: 0.5;
+}
+.footer span{
+    color:rgb(190, 231, 211);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgb(32, 32, 32), 0 0 1em rgb(243, 243, 255), 0 0 0.2em rgb(255, 0, 0);;
+}
+.Icon{
+    display:flex;
+    word-wrap: wrap;
+    text-align: center;
+    justify-content:center;
+    margin-top:1rem;
+}
+.Icon span{
+    margin:1rem;
+}
+.Icon span:hover{
+         color:rgb(0, 0, 0);    
+}

@@ -1,0 +1,32 @@
+.header{
+    background: #262163;
+    color: #FFFEFF;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.satff-info{
+    margin: 2rem;
+}
+.user-img{
+    margin-top: 1rem;
+    height: 80px;
+    width: 80px;
+}
+.user-info{
+    color: #262163;
+}
+.user-info-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.scrollee{
+    height: 400px;
+    /* overflow:auto; */
+    overflow: auto;
+    overflow: none;
+    /* display: none; */
+    /* overflow: hidden; */
+}

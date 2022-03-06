@@ -1,0 +1,71 @@
+.header{
+    background: #262163;
+    color: #FFFEFF;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.calMonth{
+text-align: center;
+font-size: 1.5rem;
+color: #21205F;
+}
+.btnMonths{
+width: 20px;
+}
+.btnCal{
+    margin-top: 21px;
+    background: #21205F;
+    color:#ffff;
+    /* width: 13%; */
+    
+}
+.btnDiv{
+    text-align: end; 
+    margin: 0px;
+}
+.weeksdays{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background:#21205F;
+    color:#fff;
+    text-align: center;
+    /* width: 100%;  */
+}
+.weeksdays span{
+ border: 1px solid white;
+ padding: 2px;
+ /* font-size: 1.2rem; */
+}
+.days{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  
+}
+.days div{
+    border:1px solid rgb(212, 210, 210);
+    text-align: end;
+    padding-bottom: 20%;
+    /* font-size: 2rem; */
+}
+.days div:hover{
+    background: rgb(192, 192, 192);
+}
+.next-date{
+    opacity: 0.4;
+}
+.prev-date{
+    opacity: 0.4;
+}
+.prev-date:hover,
+.next-date:hover{
+    background: none;
+    opacity: 0.1;
+}
+.today{
+    background: #21205F;
+    color:white;
+}
+

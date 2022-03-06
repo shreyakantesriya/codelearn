@@ -1,0 +1,210 @@
+@media screen and (min-width: 320px) {
+    .row.cero-inner {
+        padding-left: 25.1px;
+        padding-right: 4px;
+    }
+    .news-img{
+        width: 80px;
+    }
+    img.img_pacific{
+        margin: 1rem;
+        height: 460px;
+    }
+    iframe {
+        margin-top: 1rem;
+        margin: 1rem;
+        width: 300px;
+        height:450px;
+    }
+    i.fab.fa-facebook.fa-2x {
+        font-size: 1em;
+    }
+    i.fab.fa-google-plus-g.fa-2x {
+        font-size: 1em;
+    }
+    i.fas.fa-thumbs-up.fa-2x {
+        font-size: 1em;
+    }
+    i.fab.fa-twitter.fa-2x {
+        font-size: 1em;
+    }
+    i.fas.fa-map-marker-alt.fa-2x {
+        font-size: 1em;
+    }
+    .Icon {
+        margin: 0.1rem;
+    }
+   
+   }
+   @media screen and (min-width: 375px){
+    /* .col.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4.col-xxl-4.main.cero {
+        padding-right: -0.9px;
+        padding-left: 29.1px;
+    } */
+    img.img_pacific{
+        width: 350px;
+    }
+    iframe {
+        width: 359px;
+    }
+   }
+
+   @media screen and (min-width: 425px){
+    /* .col.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4.col-xxl-4.main.cero {
+        padding-right: -0.9px;
+        padding-left: 29.1px;
+    } */
+    img.img_pacific{
+        width: 400px;
+    }
+    iframe {
+        width: 400px;
+        margin: 1rem;
+    }
+
+   }
+   @media only screen and (max-width:425px) {
+    .carousel-caption.text {
+        left: 6%;
+        right: 0%;
+    }
+    .col.col-3.col-sm-3.col-md-3.col-lg-2.col-xl-2.col-xxl-2.arrow {
+        font-size: 8px;
+        padding-top: 9px;
+    }
+    button.carousel-control-prev.previ {
+        /* top: 295%; */
+        top: 266%;
+        left: 0.1px;
+    }
+    button.carousel-control-next.next {
+        /* top: 296%;
+        right:1px; */
+        top: 266%;
+        right: -21px;
+    }
+       .scro{
+           height: 400px;
+           overflow: auto;
+       }
+       img.logo {
+           margin-top: 1rem;
+           margin-left: 30%;
+           height:80px;
+        }
+     }
+   @media only screen and (min-width: 768px) {
+    button.carousel-control-prev.previ {
+        top: 261%;
+        left: 0.1px;
+      
+    }
+    
+    button.carousel-control-next.next {
+        top: 261%;
+        right: 1px;
+    }
+    img.logo {
+        margin-left: 40%;
+        margin-top: 0.5rem;
+    }
+    img.img_pacific{
+        width: 740px;
+    }
+    iframe {
+        width: 720px;
+        margin: 1rem;
+    }
+    i.fab.fa-facebook.fa-2x {
+        font-size: 2em;
+    }
+    i.fab.fa-google-plus-g.fa-2x {
+        font-size: 2em;
+    }
+    i.fas.fa-thumbs-up.fa-2x {
+        font-size: 2em;
+    }
+    i.fab.fa-twitter.fa-2x {
+        font-size: 2em;
+    }
+    i.fas.fa-map-marker-alt.fa-2x {
+        font-size: 2em;
+    }
+    .Icon {
+        margin: 1rem;
+    }
+   }
+   @media screen and (min-width: 1024px){
+
+    button.carousel-control-prev.previ {
+        left: 27%;
+        top : 14%;
+    }
+    button.carousel-control-next.next {
+        right: 27%;
+        top: 14%;
+    }
+    img.img_pacific{
+        width: 300px;
+    }
+    iframe {
+        width: 300px;
+       
+    }
+    .row.main-div {
+        margin-top: 3rem;
+    }
+    button.carousel-control-prev.previ {
+        left: 27%;
+        top : 98%;
+    }
+    button.carousel-control-next.next {
+        right: 27%;
+        top: 98%;
+    }
+   }
+   @media  only screen and (min-width:1025px) and (max-width:1600px) {
+    button.carousel-control-prev.previ {
+       
+        left: 27%;
+        top : 14%;
+    }
+    button.carousel-control-next.next {
+       
+        right: 27%;
+        top: 14%;
+    }
+    .row.main-div {
+        margin-top: 3rem;
+    }
+        img.logo {
+            margin-left: 50%;
+        }
+        img.img_pacific {
+            width: 400px;
+        } 
+         iframe{
+            width: 400px;
+        }
+        i.fab.fa-facebook.fa-2x {
+            font-size: 2em;
+        }
+        i.fab.fa-google-plus-g.fa-2x {
+            font-size: 2em;
+        }
+        i.fas.fa-thumbs-up.fa-2x {
+            font-size: 2em;
+        }
+        i.fab.fa-twitter.fa-2x {
+            font-size: 2em;
+        }
+        i.fas.fa-map-marker-alt.fa-2x {
+            font-size: 2em;
+        }
+        .Icon {
+            margin: 1rem;
+        }
+
+        
+     
+   }

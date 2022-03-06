@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background: #262163;
+    color: #FFFEFF;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.document{
+    margin-bottom: 1rem;
+}
+/* library componet css */
+.library {
+    margin: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-size: 1.9rem ;
+    color: #FFFEFF;
+}
+.library-one,
+.library-four,
+.library-five{
+    background: #229E56;
+    padding: 1rem;
+    
+}
+.library-two,
+.library-three,
+.library-six{
+    background: #3C3972;
+    padding: 1rem;
+    
+}
+.library-one:hover,
+.library-four:hover,
+.library-five:hover{
+    background: #64ce90;
+}
+.library-two:hover,
+.library-three:hover,
+.library-six:hover{
+    background: #7f7bce;
+}

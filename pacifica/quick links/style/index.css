@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background: #262163;
+    color: #FFFEFF;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+}
+.header-link{
+    margin: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.header-link p{
+    font-size: 1.9rem ;
+}
+
+.header-link-one,
+.header-link-three,
+.header-link-five,
+.header-link-seven,
+.header-link-nine {
+    background: #3C3972;
+    color: #FFFEFF;
+}
+.header-link-two,
+.header-link-four,
+.header-link-six,
+.header-link-eight{
+    background: #FFFEFF;
+    color: #3C3972;
+}
+
+
+.header-link-two:hover,
+.header-link-four:hover,
+.header-link-six:hover,
+.header-link-eight:hover{
+    background: #b9b5b9;
+    
+}
+.header-link-one:hover,
+.header-link-three:hover,
+.header-link-five:hover,
+.header-link-seven:hover,
+.header-link-nine:hover {
+    background: #8985cf;
+    
+}
